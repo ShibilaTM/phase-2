@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up </title>
+    <link rel="stylesheet" href="logsign.css">
+   
+</head>
+<body >
+    <p style="background-image: url('image/background.jpg');"></p>
+    <div class="container">
+        <form class="login" action="login.html" onsubmit="return checkValidation();"  >
+            <h1> Sign Up</h1>
+            <br>
+            <!-- email -->
+            <div class="field email-field">
+                <div class="input-field ">
+            <input type="text" placeholder="Email" id="email"  onkeyup="return validate()" onfocus="change()" onblur="hide()">
+        </div>
+            <span id="err1" ></span>
+       
+            <br>
+            <!-- password -->
+            <div class="input-field ">
+            <input type="password" placeholder="Passsword" id="pwd" onkeyup="return display()" onfocus="change()" onblur="hide()">
+            </div>
+            
+            <span id="pass1"></span>
+            <br>
+            <!-- conform password -->
+            <div class="input-field ">
+                <input type="password" placeholder="Confirm passsword" id="copwd" onkeyup="return success()" onfocus="change()" onblur="hide()">
+            </div>
+                
+                <span id="copass1"></span>
+            <br>
+                <!--phone number  -->
+                <div class="input-field ">
+                    <input type="tel" placeholder="Mobile Number" id="phone" onkeyup="return mynNumber()" onfocus="change()" onblur="hide()">
+                 </div>
+                    
+                    <span id="mob1"></span>
+                 <br>
+
+
+     
+           
+            <button type="submit">Submit </button>
+        </form>
+    </div>
+<script src="javascript/signup.js"></script>
+</body>
+</html>
