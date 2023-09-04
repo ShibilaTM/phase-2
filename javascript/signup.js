@@ -128,10 +128,10 @@ function hide(){
 
 function checkValidation() {
     if (validate() && display()&& success() && mynNumber()) {
-        // Both email and password are valid, allow navigation
+        
         return true;
     } else {
-        // Email or password is invalid, prevent navigation
+        
         return false;
     }
 }
